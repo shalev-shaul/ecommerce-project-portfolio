@@ -183,6 +183,11 @@ img.large {
 }
 
 /* Alert */
+
+.loading {
+  display: block !important;
+}
+
 .success {
   color: #20a20a;
 }
@@ -238,6 +243,8 @@ img.large {
   margin-top: 0.4rem;
   border-radius: 0.5rem;
 }
-.dropdown:hover .dropdown-content {
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
   display: block;
 }
