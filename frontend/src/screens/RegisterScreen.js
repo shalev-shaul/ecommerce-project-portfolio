@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { register, signin } from "../actions/userActions";
+import { register } from "../actions/userActions";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 
@@ -31,7 +31,7 @@ export default function RegisterScreen(props) {
     if (userInfo) {
       props.history.push(redirect);
     }
-  }, [userInfo, redirect, userInfo]);
+  }, [redirect, userInfo, props.history]);
 
   return (
     <div>

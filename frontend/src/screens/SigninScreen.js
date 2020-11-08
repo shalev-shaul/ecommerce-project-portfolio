@@ -26,7 +26,7 @@ export default function SigninScreen(props) {
     if (userInfo) {
       props.history.push(redirect);
     }
-  }, [userInfo, redirect, userInfo]);
+  }, [redirect, userInfo, props.history]);
 
   return (
     <div>
